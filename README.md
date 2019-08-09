@@ -12,11 +12,13 @@ To run locally, run `go run main.go` from the project's root directory. The loca
 
 `GET` - Receives a search subject as a URL parameter. Returns a JSON object containing an array of articles with fields `Web_URL`, `Headline`, and `Pub_Date`.
 
+##
 
 `/search/guardian/?subject={subject}` - Exposes selected data drawn from the Guardian article search api.
 
 `GET` - Receives a search subject as a URL parameter. Returns a JSON object containing an array of articles with fields `WebURL`, `WebTitle`, and `WebPublicationDate`.
 
+##
 
 `/search/combination/?subject={subject}` - Exposes selected data drawn from both the NY Times and the Guardian article search apis. Ten articles are taken from each source, combined, and sorted by descending publication date.
 

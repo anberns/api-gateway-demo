@@ -18,8 +18,8 @@ type Article struct {
 	SectionID          string `json:"sectionId"`
 	SectionName        string `json:"sectionName"`
 	APIURL             string `json:"webPublicationDate"`
-	WebURL             string `json:"webTitle"`
-	WebTitle           string `json:"webUrl"`
+	WebURL             string `json:"webUrl"`
+	WebTitle           string `json:"webTitle"`
 	WebPublicationDate string `json:"apiUrl"`
 	IsHosted           string `json:"isHosted"`
 	PillarID           string `json:"pillarId"`

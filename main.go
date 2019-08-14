@@ -2,10 +2,10 @@ package main
 
 import (
 	"fmt"
-	"gatewayDemo/combination"
-	"gatewayDemo/gql"
-	"gatewayDemo/guardian"
-	"gatewayDemo/times"
+	"github.com/anberns/gateway-api-demo/combination"
+	"github.com/anberns/gateway-api-demo/gql"
+	"github.com/anberns/gateway-api-demo/guardian"
+	"github.com/anberns/gateway-api-demo/times"
 	"net/http"
 
 	"github.com/joho/godotenv"

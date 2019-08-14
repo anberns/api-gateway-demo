@@ -2,12 +2,13 @@ package combination
 
 import (
 	"encoding/json"
-	"gatewayDemo/guardian"
-	"gatewayDemo/times"
 	"log"
 	"net/http"
 	"sort"
 	"sync"
+
+	"github.com/anberns/gateway-api-demo/guardian"
+	"github.com/anberns/gateway-api-demo/times"
 )
 
 type Collection struct {

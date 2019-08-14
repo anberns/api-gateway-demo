@@ -1,0 +1,4 @@
+TIMES_KEY=qCRGSlxFIEMm6oXoQQRLHxIFUWM3890I
+TIMES_URL=https://api.nytimes.com/svc/search/v2/articlesearch.json?q=%v&api-key=%v
+GUARDIAN_KEY=7d538671-1631-4677-978e-177c0210e487
+GUARDIAN_URL=https://content.guardianapis.com/search?q=%v&api-key=%v

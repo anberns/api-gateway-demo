@@ -8,25 +8,25 @@ This sample Gateway draws data from two source APIs, the NY Times and the Guardi
 To run locally, run `go run main.go` from the project's root directory. The local api server will be available at `localhost:8090`.
 
 ### Semi-RESTful Endpoints
-`/search/times/?subject={subject}` - Exposes selected data drawn from the NY Times article search api.
+`/search/times?subject={subject}` - Exposes selected data drawn from the NY Times article search api.
 
 `GET` - Receives a search subject as a URL parameter. Returns a JSON object containing an array of articles with fields `Web_URL`, `Headline`, and `Pub_Date`.
 
 ##
 
-`/search/guardian/?subject={subject}` - Exposes selected data drawn from the Guardian article search api.
+`/search/guardian?subject={subject}` - Exposes selected data drawn from the Guardian article search api.
 
 `GET` - Receives a search subject as a URL parameter. Returns a JSON object containing an array of articles with fields `WebURL`, `WebTitle`, and `WebPublicationDate`.
 
 ##
 
-`/search/combination/?subject={subject}` - Exposes selected data drawn from both the NY Times and the Guardian article search apis. Ten articles are taken from each source, combined, and sorted by descending publication date.
+`/search/combination?subject={subject}` - Exposes selected data drawn from both the NY Times and the Guardian article search apis. Ten articles are taken from each source, combined, and sorted by descending publication date.
 
 `GET` - Receives a search subject as a URL parameter. Returns a JSON object containing an array of articles with fields `URL`, `Title`, and `Date`.
 
 ### GraphQL Endpoint
 
-`/search/graphql/guardian/?search={subject}&query={query}` - Exposes the full data available from the Guardian api while offering the ability to choose any combination of fields through a GraphQL `Query`.
+`/search/graphql/guardian?search={subject}&query={query}` - Exposes the full data available from the Guardian api while offering the ability to choose any combination of fields through a GraphQL `Query`.
 
 `GET` - Receives a search subject as a URL parameter as well a GraphQL query in the form. Returns a JSON object containing an array of articles with the chosen fields.
 
